@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 1px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 16px;
+    background-color: #03050f;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header,
+#fig-section,
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: var(--margin-1);
+}
+
+header {
+    margin-top: var(--margin-m);
+    color: var(--text-dark-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+header>p {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+#img-div {
+    margin: auto;
+    padding: 30px;
+}
+
+#image {
+    display: block;
+    width: 850px;
+    height: auto;
+    margin: auto;
+    border-radius: 22px;
+    filter: none;
+}
+
+#img-caption {
+    display: block;
+    position: relative;
+    top: var(--margin-s);
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.quote {
+    color: var(--text-black-color);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#quote-cap {
+    margin: var(--margin-s);
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.life {
+    padding: 30px 70px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.life-header {
+    font-size: 20px;
+    padding: 30px;
+}
+
+.sm-content {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.time-line {
+    width: 100%;
+    margin: auto;
+}
+
+.details {
+    width: 100%;
+}
+
+.sm-content li {
+    list-style: 1.5;
+    padding: 0px 2px;
+    letter-spacing: 0.2px;
+    list-style: none;
+    margin: auto;
+}
+
+.sm-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 24px;
+    margin-top: 10px;
+    font-size: 3rem;
+    background-color: honeydew;
+    color: #03050f;
+}
+
+.sm-btn::after {
+    content: "+";
+    font-size: 2rem;
+    transition: 0.30s;
+}
+
+.sm-btn:hover {
+    background-color: rgb(208, 151, 223);
+}
+
+details[open]>.sm-btn::after {
+    transform: rotate(45deg);
+}
+
+.sm-btn span {
+    display: flex;
+    font-size: 2rem;
+    margin-right: 16px;
+}
+
+.fa-solid {
+    margin: auto;
+    padding-right: 10px;
+}

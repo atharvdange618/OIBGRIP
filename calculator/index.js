@@ -22,6 +22,11 @@ for (item of buttons) {
             screen.value = eval(screenValue);
         }
 
+        else if (buttonText == 'del') {
+            screenValue = screenValue.slice(0, -1);
+            screen.value = screenValue;
+        }
+        
         else {
             screenValue += buttonText;
             screen.value = screenValue;
